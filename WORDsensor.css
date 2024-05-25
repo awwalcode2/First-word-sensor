@@ -1,0 +1,38 @@
+body{
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    outline: none;
+    border: 3px solid darkslategray;
+}
+.big-container{
+    background-color: white;
+    height: 300px;
+    margin-top: 90px;
+    text-align: center;
+    width: 300px;
+    border-radius: 15px;
+    animation: drop 0.5s  ease-in;
+}
+.big-container button{
+    background-color: darkslategray;
+    color: white;
+    margin-top: 50px;
+    border: none;
+    height: 25px;
+}
+.word{
+    color: white;
+    font-size: 28px;
+}
+
+@keyframes drop {
+    0%{ transform: translatey(0);}
+    50%{ transform: translatey(70px);}
+    100%{ transform: translatey(0);}
+    
+}

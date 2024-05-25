@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WORDsensor.css">
+    <title>WORD-SENSOR</title>
+</head>
+<body>
+    <div class="word">
+        <h1>WORD SENSOR</h1>
+    </div>
+    <div class="big-container">
+        <input type="text"id="input" >
+        <button id="btn" onclick="btn1()">CLICK ME</button>
+        <p id="paragraph"></p>
+    </div>
+
+
+
+
+
+
+    <script>
+        let input1 = document.getElementById('input')
+        let result = document.getElementById('paragraph')
+
+
+        function btn1(){
+            let answer = input1.value.toLowerCase()
+            checking = answer.replaceAll("fucking", "f***ing").replaceAll("fuck", "f**k").replaceAll("yansh", "y***sh").replaceAll("pussy", "p**sy").replaceAll("porn", "p**rn").replaceAll("foolish", "f**li*sh").replaceAll("mad", "m*d").trim()
+            result.textContent = checking
+        }
+
+    </script>
+</body>
+</html>
